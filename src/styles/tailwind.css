@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Global Background Colors */
+    --global-bg-1: #000000;
+    --global-bg-2: #00000026;
+    --global-bg-3: #3a5a4d;
+    --global-bg-4: #404040;
+    --global-bg-5: #525252;
+    --global-bg-6: #cdcdcd;
+    --global-bg-7: #e3d2c0;
+    --global-bg-8: #e5e4e1;
+    --global-bg-9: #eaeaea19;
+    --global-bg-10: #ffffff;
+    --global-bg-11: #ffffff66;
+
+    /* Global Text Colors */
+    --global-text-1: #0f5048;
+    --global-text-2: #181818;
+    --global-text-3: #181d24;
+    --global-text-4: #242021;
+    --global-text-5: #302f2f;
+    --global-text-6: #3a5a4d;
+    --global-text-7: #525252;
+    --global-text-8: #5e605e;
+    --global-text-9: #757575;
+    --global-text-10: #8b8b8b;
+    --global-text-11: #fefefe;
+    --global-text-12: #ffffff;
+
+    /* ChipView Colors */
+    --chipview-text-1: #000000;
+    --chipview-text-2: #111418;
+
+    /* EditText Colors */
+    --edittext-bg-1: #e1e1e1;
+  }
+}
+
+@layer utilities {
+  /* Global Background */
+  .bg-global-1 { background-color: var(--global-bg-1); }
+  .bg-global-2 { background-color: var(--global-bg-2); }
+  .bg-global-3 { background-color: var(--global-bg-3); }
+  .bg-global-4 { background-color: var(--global-bg-4); }
+  .bg-global-5 { background-color: var(--global-bg-5); }
+  .bg-global-6 { background-color: var(--global-bg-6); }
+  .bg-global-7 { background-color: var(--global-bg-7); }
+  .bg-global-8 { background-color: var(--global-bg-8); }
+  .bg-global-9 { background-color: var(--global-bg-9); }
+  .bg-global-10 { background-color: var(--global-bg-10); }
+  .bg-global-11 { background-color: var(--global-bg-11); }
+
+  /* Global Text */
+  .text-global-1 { color: var(--global-text-1); }
+  .text-global-2 { color: var(--global-text-2); }
+  .text-global-3 { color: var(--global-text-3); }
+  .text-global-4 { color: var(--global-text-4); }
+  .text-global-5 { color: var(--global-text-5); }
+  .text-global-6 { color: var(--global-text-6); }
+  .text-global-7 { color: var(--global-text-7); }
+  .text-global-8 { color: var(--global-text-8); }
+  .text-global-9 { color: var(--global-text-9); }
+  .text-global-10 { color: var(--global-text-10); }
+  .text-global-11 { color: var(--global-text-11); }
+  .text-global-12 { color: var(--global-text-12); }
+
+  /* ChipView */
+  .text-chipview-1 { color: var(--chipview-text-1); }
+  .text-chipview-2 { color: var(--chipview-text-2); }
+
+  /* EditText */
+  .bg-edittext-1 { background-color: var(--edittext-bg-1); }
+}
