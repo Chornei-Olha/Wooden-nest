@@ -13,6 +13,10 @@ import FAQSection from '../../components/common/FAQSection';
 import Footer from '../../components/common/Footer';
 import ConsultationForm from '../../components/common/ConsultationForm';
 import FeatureIntroSection from '../../components/common/FeatureIntroSection';
+import LifestyleSection from '../../components/common/LifestyleSection';
+import LocationSection from '../../components/common/LocationSection';
+import ConstructionProgressSection from '../../components/common/ConstructionProgressSection';
+import NewLifeSection from '../../components/common/NewLifeSection';
 
 interface PropertyCardProps {
   image: string;
@@ -369,7 +373,7 @@ const WoodenNestPage: React.FC = () => {
         </div>
       </div>
       {/* Comfort Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#f2f1ef]">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="flex flex-col gap-10">
             {/* Текстовая часть */}
@@ -443,40 +447,7 @@ const WoodenNestPage: React.FC = () => {
       </section>
 
       {/* New Life Section */}
-      <section className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-global-3">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/img_vector_blue_gray_800.svg"
-            alt="Background Pattern"
-            fill
-            className="object-cover opacity-20"
-          />
-        </div>
-        <div className="container relative w-full mx-auto">
-          <div className="bg-global-2 backdrop-blur-sm rounded-lg p-8 sm:p-12 lg:p-16 max-w-4xl">
-            <div className="flex flex-col gap-6 sm:gap-8">
-              <span className="text-xs sm:text-[11px] font-montserrat font-normal uppercase text-global-12 tracking-wider">
-                Ваш будинок. Ваш простір. Ваш час.
-              </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-playfair-display font-semibold leading-tight text-global-12">
-                Тут починається ваше нове життя
-              </h2>
-              <p className="text-sm lg:text-[14px] font-montserrat font-normal leading-relaxed text-global-12 max-w-2xl">
-                Відкрийте для себе концепцію затишного котеджного містечка з парком, озером і тишею
-                — за крок до міста, але з відчуттям повної свободи.
-              </p>
-              <Button
-                variant="primary"
-                size="md"
-                onClick={() => handleSubmit('queue')}
-                className="bg-global-3 text-global-12 w-fit"
-              >
-                Записатися в чергу
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NewLifeSection />
 
       {/* Features Sections */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
@@ -728,229 +699,15 @@ const WoodenNestPage: React.FC = () => {
         </div>
       </section>
       {/* Construction Progress Section */}
-      <section className="py-16 px-4">
-        <div className="bg-global-3">
-          <div className="container mx-auto py-16">
-            {/* Заголовок и очереди */}
-            <h2 className="text-3xl lg:text-[36px] font-unbounded font-extralight uppercase text-left text-white mb-10">
-              Хід будівництва
-            </h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mb-8">
-              {/* 1 черга */}
-              <div className="border border-white p-6 ">
-                <h3 className="text-[36px] font-unbounded font-extralight text-white mb-2">
-                  1 черга
-                </h3>
-                <p className="text-xl text-white">введена в експлуатацію</p>
-              </div>
-              {/* 2 черга */}
-              <div className="border border-white p-6 ">
-                <h3 className="text-[36px] font-unbounded font-extralight text-white mb-2">
-                  2 черга
-                </h3>
-                <p className="text-xl text-white">2 квартал 2025р.</p>
-              </div>
-              {/* 3 черга */}
-              <div className="border border-white p-6 ">
-                <h3 className="text-[36px] font-unbounded font-extralight text-white mb-2">
-                  3 черга
-                </h3>
-                <p className="text-xl text-white">4 квартал 2025 р.</p>
-              </div>
-            </div>
-
-            {/* Кнопка Дивитись планування */}
-            <div className="text-center">
-              <button className="bg-white text-global-3 px-6 py-3 rounded-full font-unbounded font-light text-lg">
-                Дивитись планування →
-              </button>
-            </div>
-          </div>
-        </div>{' '}
-        {/* Изображения и логотип */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-          {/* Фото слева */}
-          <div className="w-full">
-            <img
-              src="/images/img__268x474.png"
-              alt="Котедж 1"
-              className="w-full h-auto  object-cover"
-            />
-          </div>
-
-          {/* Логотип по центру */}
-          <div className="bg-[url('/images/bg-pattern.png')] bg-cover bg-center flex items-center justify-center h-full py-16 rounded-lg">
-            <img src="/images/img__1.png" alt="Котедж 2" className="w-full h-auto  object-cover" />
-          </div>
-
-          {/* Фото справа */}
-          <div className="w-full">
-            <img
-              src="/images/img__2.png"
-              alt="Дерев'яне Гніздо"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </div>
-        {/* Кнопка записи в очередь */}
-        <div className="text-center">
-          <button
-            onClick={() => handleSubmit('queue')}
-            className="bg-white text-global-3 px-8 py-3 rounded-md text-lg font-unbounded"
-          >
-            Записатися в чергу
-          </button>
-        </div>
-      </section>
+      <ConstructionProgressSection />
 
       {/* Location Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="w-full container mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair-display font-semibold text-global-5 mb-4">
-            Розташування та інфраструктура
-          </h2>
-          <p className="text-sm lg:text-[14px] font-montserrat font-normal leading-relaxed text-global-7 max-w-4xl mb-8 lg:mb-12">
-            У Дерев'яному гнізді ми розуміємо важливість доступності та зручності. Розташований у
-            мальовничій та спокійній місцевості, наше котеджницьке містечко також знаходиться в
-            безпосередній близькості до різноманітної зовнішньої інфраструктури, яка
-            <br />
-            задовольнить усі ваші потреби. Це забезпечує ідеальне поєднання усамітненого життя в
-            оточенні природи зі зручностями міського життя.
-          </p>
-          {/* Map Section */}
-          <div className="relative">
-            <div className="aspect-[16/9] sm:aspect-[2/1] lg:aspect-[1326/770] bg-gray-200 rounded-lg overflow-hidden">
-              <iframe
-                title="Location Map"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=30.2%2C50.3%2C30.8%2C50.7&layer=mapnik"
-                className="w-full h-full border-0"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
-            {/* Location Info Card */}
-            <div className="absolute top-4 left-4 sm:top-8 sm:left-8 bg-global-10 border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-8 max-w-sm shadow-lg">
-              <div className="flex flex-col gap-4 sm:gap-6">
-                <div className="flex items-center gap-4">
-                  <Image
-                    src="/images/img_shops_svg.svg"
-                    alt="Lake and Beach"
-                    width={38}
-                    height={38}
-                    className="w-8 sm:w-9 h-8 sm:h-9"
-                  />
-                  <span className="text-sm sm:text-base lg:text-[16px] font-montserrat-alternates font-medium text-global-5">
-                    1км озеро та пляж
-                  </span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image
-                    src="/images/img_farmers_shop_svg.svg"
-                    alt="Railway Station"
-                    width={38}
-                    height={38}
-                    className="w-8 sm:w-9 h-8 sm:h-9"
-                  />
-                  <span className="text-sm sm:text-base lg:text-[16px] font-montserrat-alternates font-medium text-global-5">
-                    1км ЖД станція
-                  </span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image
-                    src="/images/img_meat_shop_svg.svg"
-                    alt="Recreation Zone"
-                    width={38}
-                    height={38}
-                    className="w-8 sm:w-9 h-8 sm:h-9"
-                  />
-                  <span className="text-sm sm:text-base lg:text-[16px] font-montserrat-alternates font-medium text-global-5">
-                    Зона відпочинку
-                  </span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image
-                    src="/images/img_relax_svg.svg"
-                    alt="Forest Areas"
-                    width={38}
-                    height={38}
-                    className="w-8 sm:w-9 h-8 sm:h-9"
-                  />
-                  <span className="text-sm lg:text-[14px] font-montserrat-alternates font-medium text-global-5">
-                    Лісові масиви
-                  </span>
-                </div>
-                <Image
-                  src="/images/img_rectangle_3.png"
-                  alt="Location Preview"
-                  width={288}
-                  height={258}
-                  className="w-full h-auto rounded-md mt-4"
-                />
-                <Button variant="primary" size="sm" className="bg-global-3 text-global-12 w-full">
-                  Прокласти маршрут
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Lifestyle Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
-        <div className="absolute inset-0">
-          <Image src="/images/img__0x0.png" alt="Background" fill className="object-cover" />
-        </div>
-        <div className="relative w-full max-w-7xl mx-auto">
-          <div className="text-left mb-12 lg:mb-16">
-            <h2 className="text-6xl sm:text-8xl lg:text-[115px] font-montserrat font-thin uppercase text-global-8 leading-tight mb-8 lg:mb-16">
-              Дерев'яне гніздо об'єднує
-            </h2>
+      <LocationSection />
 
-            <div className="flex flex-col lg:flex-row gap-10">
-              {' '}
-              <div className="max-w-2xl mx-auto space-y-8 lg:space-y-12">
-                <h3 className="text-3xl sm:text-4xl lg:text-[44px] font-playfair-display font-semibold text-global-5 mb-8">
-                  Дерев'яне гніздо-
-                  <br />
-                  це особливий спосіб
-                  <br />
-                  життя
-                </h3>
-                <p className="text-sm lg:text-[14px] font-montserrat font-normal leading-relaxed text-global-5">
-                  Ми створюємо не просто котеджне містечко — ми формуємо новий стиль життя, де
-                  головне — гармонія з природою, спокій і комфорт.
-                  <br />
-                  <br />
-                  Це місце, де кожен зможе відчути затишок і безпеку власного дому, не відмовляючись
-                  від сучасних зручностей.
-                  <br />
-                  Наше містечко — це поєднання натуральних матеріалів, екологічного дизайну та
-                  продуманих інфраструктурних рішень.
-                  <br />
-                  <br />
-                  Ми вже на етапі активного планування, щоб зробити цей проєкт унікальним і
-                  справжнім домом для родин, які цінують якість життя
-                </p>
-                <Button variant="primary" size="md" className="bg-global-3 text-global-12">
-                  Отримати консультацію
-                </Button>
-              </div>
-              <div>
-                <Image
-                  src="/images/Group2.webp"
-                  alt="Cottage"
-                  width={640}
-                  height={734}
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Lifestyle Section */}
+      <LifestyleSection />
 
       {/* Property Showcase */}
-
       <section className="py-12 sm:py-16 lg:py-20 px-0 relative">
         <div className="keen-slider" ref={sliderRef}>
           {propertyData.map((property, index) => (
@@ -990,7 +747,7 @@ const WoodenNestPage: React.FC = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="px-4 sm:px-6 lg:px-8 bg-global-4 mx-10 my-16">
+      <section className="px-4 sm:px-6 lg:px-8 bg-global-4 mx-2 sm:mx-5 lg:mx-10 my-16">
         <div className="w-full container mx-auto">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="w-full lg:w-1/2">
@@ -1028,7 +785,7 @@ const WoodenNestPage: React.FC = () => {
                       variant="filled"
                     />
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
                     <p className="text-xs lg:text-[10px] font-montserrat font-normal leading-relaxed text-global-12 flex-1">
                       Усі дані захищені та надійно зберігаються.
                       <br />

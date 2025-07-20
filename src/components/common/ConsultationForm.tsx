@@ -20,7 +20,7 @@ export default function ConsultationForm() {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full container mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
           <div className="w-full lg:w-1/2">
             <Image
