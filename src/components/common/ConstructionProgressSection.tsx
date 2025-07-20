@@ -35,14 +35,14 @@ export default function ConstructionProgressSection() {
           alt="Котедж 1"
           width={400}
           height={600}
-          className="absolute bottom-0 right-0 w-[40%] h-auto object-cover"
+          className="absolute bottom-0 right-0 w-[15%] h-auto object-cover"
         />
         <Image
           src="/images/img__528x484.png"
           alt="Котедж 1"
           width={400}
           height={600}
-          className="absolute bottom-0 md:bottom-[-100px] left-0 w-[40%] h-auto object-cover"
+          className="absolute bottom-0 md:bottom-[-100px] left-0 w-[15%] h-auto object-cover"
         />
       </div>
 
