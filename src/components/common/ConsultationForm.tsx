@@ -68,11 +68,9 @@ export default function ConsultationForm() {
                   Отримати консультацію
                 </Button>
               </div>
-              <p className="text-xs lg:text-[10px] font-montserrat font-normal text-center text-global-5">
+              <p className="text-xs lg:text-[10px] font-montserrat font-normal text-center text-global-5 max-w-2xl">
                 Усі дані захищені та надійно зберігаються. Натискаючи на "Отримати консультацію" ви
-                даєте свою
-                <br />
-                згоду на обробку персональних даних.
+                даєте свою згоду на обробку персональних даних.
               </p>
             </div>
           </div>

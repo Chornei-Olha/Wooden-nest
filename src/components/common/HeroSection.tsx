@@ -14,7 +14,7 @@ export default function HeroSection() {
     <section className="relative w-full h-[1050px] sm:h-[800px] lg:min-h-[100vh] overflow-hidden text-white">
       {/* Background Image */}
       <Image
-        src="/images/img_gradient_image.png"
+        src="/images/bg_gradient.webp"
         alt="Wooden Nest Hero"
         fill
         className="object-cover"
@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16">
           {/* Left Side */}
           <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-1/2">
-            <h1 className="text-6xl sm:text-7xl lg:text-[130px] leading-none font-playfair-display font-semibold">
+            <h1 className="text-5xl sm:text-7xl lg:text-[130px] leading-none font-playfair-display font-semibold">
               Дерев'яне <br /> гніздо
             </h1>
             <p className="text-lg lg:text-[20px] font-montserrat">

@@ -476,13 +476,13 @@ const WoodenNestPage: React.FC = () => {
       </section>
       {/* Master Plan Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="w-full container mx-auto">
+        <div className="w-full ">
           <div className="flex flex-col gap-6 sm:gap-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-playfair-display font-semibold text-global-5">
+            <h2 className="container mx-auto text-3xl sm:text-4xl lg:text-[44px] font-playfair-display font-semibold text-global-5">
               Генплан
             </h2>
             {/* Amenities Chips */}
-            <ChipView className="w-full" onSelectionChange={setSelectedAmenities}>
+            <ChipView className="w-full container mx-auto" onSelectionChange={setSelectedAmenities}>
               <ChipItem className="border border-[#525252] px-5 py-2">КПП</ChipItem>
               <ChipItem className="border border-[#525252] px-5 py-2">Парк</ChipItem>
               <ChipItem className="border border-[#525252] px-5 py-2">
@@ -499,7 +499,10 @@ const WoodenNestPage: React.FC = () => {
             </ChipView>
           </div>
           {/* Master Plan Visual */}
-          <div className="mt-8 lg:mt-12">
+          <div
+            className="mt-8 lg:mt-12 pb-10 pt-10 bg-no-repeat bg-cover bg-center"
+            style={{ backgroundImage: 'url(/images/house.jpg)' }}
+          >
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="w-16 sm:w-20 lg:w-[260px] h-3 bg-global-7"></div>
@@ -514,7 +517,7 @@ const WoodenNestPage: React.FC = () => {
             </div>
             {/* Interactive Map */}
             <div
-              className="relative bg-cover bg-center rounded-lg overflow-hidden"
+              className="container mx-auto relative bg-cover bg-center rounded-lg overflow-hidden"
               style={{ backgroundImage: 'url(/images/img_rendersgollandiya52_2.png)' }}
             >
               <div className="aspect-[2/1] sm:aspect-[3/2] lg:aspect-[1342/704] relative">
@@ -639,18 +642,15 @@ const WoodenNestPage: React.FC = () => {
                     />
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
-                    <p className="text-xs lg:text-[10px] font-montserrat font-normal leading-relaxed text-global-12 flex-1">
-                      Усі дані захищені та надійно зберігаються.
-                      <br />
-                      Натискаючи на "Записатися на екскурсію" ви даєте
-                      <br />
-                      свою згоду на обробку персональних даних.
+                    <p className="text-xs lg:text-[10px] font-montserrat font-normal leading-relaxed text-global-12 flex-1 w-full sm:w-1/2">
+                      Усі дані захищені та надійно зберігаються. Натискаючи на "Записатися на
+                      екскурсію" ви даєте свою згоду на обробку персональних даних.
                     </p>
                     <Button
                       variant="primary"
                       size="md"
                       onClick={() => handleSubmit('queue')}
-                      className="bg-global-3 text-global-12 flex-shrink-0"
+                      className="bg-global-3 text-global-12 flex-shrink-0 w-full sm:w-1/2"
                     >
                       Надіслати
                     </Button>

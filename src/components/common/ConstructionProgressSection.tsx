@@ -12,7 +12,7 @@ export default function ConstructionProgressSection() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       {/* Блок с очередями */}
-      <div className="relative bg-global-3">
+      <div className="relative" style={{ backgroundImage: 'url(/images/bg-small.png)' }}>
         <div className="container mx-auto py-16">
           <h2 className="text-3xl lg:text-[36px] font-unbounded font-extralight uppercase text-center sm:text-left text-white mb-10">
             Хід будівництва
@@ -61,7 +61,7 @@ export default function ConstructionProgressSection() {
         <div className="bg-[url('/images/bg-pattern.png')] bg-cover bg-center flex items-center justify-center h-full py-2 rounded-lg">
           <Image
             src="/images/img__1.png"
-            alt="Котедж 2"
+            alt="Дерев'яне Гніздо"
             width={400}
             height={600}
             className="w-full h-auto object-cover"
@@ -71,7 +71,7 @@ export default function ConstructionProgressSection() {
         <div className="w-full">
           <Image
             src="/images/img__2.png"
-            alt="Дерев'яне Гніздо"
+            alt="Котедж 2"
             width={400}
             height={600}
             className="w-full h-auto object-cover"
