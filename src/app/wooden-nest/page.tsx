@@ -457,7 +457,7 @@ const WoodenNestPage: React.FC = () => {
             {/* Background Plan Image */}
             <div className="absolute top-auto right-0 z-20 transform -translate-y-1/2 opacity-100">
               <Image
-                src="/images/plans.webp"
+                src="/images/img__542x504.png"
                 alt="Master Plan Background"
                 width={878}
                 height={364}
@@ -518,7 +518,7 @@ const WoodenNestPage: React.FC = () => {
             {/* Interactive Map */}
             <div
               className="container mx-auto relative bg-cover bg-center rounded-lg overflow-hidden"
-              style={{ backgroundImage: 'url(/images/img_rendersgollandiya52_2.png)' }}
+              style={{ backgroundImage: 'url(/images/plans.webp)' }}
             >
               <div className="aspect-[2/1] sm:aspect-[3/2] lg:aspect-[1342/704] relative">
                 {/* Plot markers would be positioned absolutely here */}
