@@ -457,7 +457,7 @@ const WoodenNestPage: React.FC = () => {
             {/* Background Plan Image */}
             <div className="absolute top-auto right-0 z-20 transform -translate-y-1/2 opacity-100">
               <Image
-                src="/images/plan_webp"
+                src="/images/plans.webp"
                 alt="Master Plan Background"
                 width={878}
                 height={364}
