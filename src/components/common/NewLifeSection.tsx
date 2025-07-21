@@ -13,7 +13,7 @@ export default function NewLifeSection() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       {/* Фоновый узор */}
-      <div className="container mx-auto absolute inset-0 top-[-600px]">
+      <div className="container mx-auto absolute inset-0 top-[-440px] lg:top-[-600px]">
         <Image src="/images/tree.svg" alt="Background Pattern" fill className="object-contain" />
       </div>
 

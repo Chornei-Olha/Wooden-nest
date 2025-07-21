@@ -55,7 +55,7 @@ ${className}`}
 
           {/* Navigation Menu */}
           <nav className={`${menuOpen ? 'block' : 'hidden'} lg:block w-full lg:w-auto`}>
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 py-4 lg:py-0">
+            <div className="flex flex-col lg:flex-col justify-center items-center gap-4 lg:gap-8 py-4 lg:py-0">
               {/* Menu Items */}
               <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
                 <button
