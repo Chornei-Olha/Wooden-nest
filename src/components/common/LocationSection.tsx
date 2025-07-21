@@ -85,7 +85,7 @@ export default function LocationSection() {
               </div>
 
               <Image
-                src="/images/img_rectangle_3.png"
+                src="/images/map.webp"
                 alt="Location Preview"
                 width={288}
                 height={258}

@@ -24,7 +24,7 @@ export default function ConsultationForm() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
           <div className="w-full lg:w-1/2">
             <Image
-              src="/images/img__632x718.png"
+              src="/images/form.png"
               alt="Consultation"
               width={718}
               height={632}

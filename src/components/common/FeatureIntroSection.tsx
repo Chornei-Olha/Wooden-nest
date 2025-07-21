@@ -9,7 +9,7 @@ export default function FeatureIntroSection({ handleSubmit }: Props) {
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0">
-        <Image src="/images/img__4.png" alt="Background" fill className="object-cover" />
+        <Image src="/images/background.webp" alt="Background" fill className="object-cover" />
         <div className="absolute inset-0"></div>
       </div>
 

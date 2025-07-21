@@ -137,7 +137,7 @@ const WoodenNestPage: React.FC = () => {
   };
   const propertyData = [
     {
-      image: '/images/img__244x366.png',
+      image: '/images/house_1.webp',
       area: '169 м2',
       title: 'Котедж. Проект №1',
       plotSize: '6,79 соток',
@@ -146,7 +146,7 @@ const WoodenNestPage: React.FC = () => {
       terrace: '43 м2',
     },
     {
-      image: '/images/img__3.png',
+      image: '/images/house_2.webp',
       area: '168 м2',
       title: 'Котедж. Проект №2',
       plotSize: 'від 6,5 сот.',
@@ -155,7 +155,7 @@ const WoodenNestPage: React.FC = () => {
       terrace: '25 м2',
     },
     {
-      image: '/images/img__244x366.png',
+      image: '/images/house_1.webp',
       area: '169 м2',
       title: 'Котедж. Проект №3',
       plotSize: '6,79 соток',
@@ -164,7 +164,7 @@ const WoodenNestPage: React.FC = () => {
       terrace: '43 м2',
     },
     {
-      image: '/images/img__244x366.png',
+      image: '/images/house_2.webp',
       area: '169 м2',
       title: 'Котедж. Проект №4',
       plotSize: '6,79 соток',
@@ -247,7 +247,7 @@ const WoodenNestPage: React.FC = () => {
               {/* Большое изображение слева */}
               <div className="w-full h-full">
                 <Image
-                  src="/images/img_gallery_1p_jpg.png"
+                  src="/images/img_gallery.webp"
                   alt="Gallery Image 1"
                   width={636}
                   height={464}
@@ -259,7 +259,7 @@ const WoodenNestPage: React.FC = () => {
               <div className="grid grid-cols-2 grid-rows-2 gap-4 h-full">
                 <div className="w-full h-full">
                   <Image
-                    src="/images/img_gallery_2p_jpg.png"
+                    src="/images/img_gallery_1.webp"
                     alt="Gallery Image 2"
                     width={314}
                     height={232}
@@ -268,7 +268,7 @@ const WoodenNestPage: React.FC = () => {
                 </div>
                 <div className="w-full h-full">
                   <Image
-                    src="/images/img_gallery_8p_jpg.png"
+                    src="/images/img_gallery_2.webp"
                     alt="Gallery Image 3"
                     width={314}
                     height={232}
@@ -277,7 +277,7 @@ const WoodenNestPage: React.FC = () => {
                 </div>
                 <div className="w-full h-full">
                   <Image
-                    src="/images/img_gallery_4p_jpg.png"
+                    src="/images/img_gallery_3.webp"
                     alt="Gallery Image 4"
                     width={314}
                     height={232}
@@ -286,7 +286,7 @@ const WoodenNestPage: React.FC = () => {
                 </div>
                 <div className="w-full h-full">
                   <Image
-                    src="/images/img_gallery_5p_jpg.png"
+                    src="/images/img_gallery_4.webp"
                     alt="Gallery Image 5"
                     width={314}
                     height={232}
@@ -339,7 +339,7 @@ const WoodenNestPage: React.FC = () => {
             </div>
             <div className="w-full lg:w-1/2 order-1 lg:order-2">
               <Image
-                src="/images/img_524_png_webp.png"
+                src="/images/zone_1.webp"
                 alt="Security Feature"
                 width={634}
                 height={344}
@@ -351,7 +351,7 @@ const WoodenNestPage: React.FC = () => {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="w-full lg:w-1/2">
               <Image
-                src="/images/img_524_png_webp_348x634.png"
+                src="/images/zone_2.webp"
                 alt="Recreation Zones"
                 width={634}
                 height={348}
@@ -412,7 +412,7 @@ const WoodenNestPage: React.FC = () => {
             </div>
             <div className="w-full lg:w-1/2 order-1 lg:order-2">
               <Image
-                src="/images/img_1_png_webp.png"
+                src="/images/zone_3.webp"
                 alt="Infrastructure"
                 width={624}
                 height={370}
@@ -425,7 +425,7 @@ const WoodenNestPage: React.FC = () => {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
               <div className="w-full lg:w-1/2">
                 <Image
-                  src="/images/img_1_png_webp_366x634.png"
+                  src="/images/zone_4.webp"
                   alt="Community Development"
                   width={634}
                   height={366}
@@ -457,7 +457,7 @@ const WoodenNestPage: React.FC = () => {
             {/* Background Plan Image */}
             <div className="absolute top-auto right-0 z-20 transform -translate-y-1/2 opacity-100">
               <Image
-                src="/images/img_.png"
+                src="/images/plan_webp"
                 alt="Master Plan Background"
                 width={878}
                 height={364}
@@ -608,7 +608,7 @@ const WoodenNestPage: React.FC = () => {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="w-full lg:w-1/2">
               <Image
-                src="/images/img_request_2_2_webp.png"
+                src="/images/exist.webp"
                 alt="Contact Us"
                 width={640}
                 height={734}
