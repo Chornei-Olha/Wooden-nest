@@ -17,6 +17,7 @@ import LifestyleSection from '../../components/common/LifestyleSection';
 import LocationSection from '../../components/common/LocationSection';
 import ConstructionProgressSection from '../../components/common/ConstructionProgressSection';
 import NewLifeSection from '../../components/common/NewLifeSection';
+import HeroSection from '../../components/common/HeroSection';
 
 interface PropertyCardProps {
   image: string;
@@ -240,138 +241,7 @@ const WoodenNestPage: React.FC = () => {
 
   return (
     <div className="w-full bg-global-8 min-h-screen">
-      {/* Hero Section */}
-      <div className="relative w-full h-[600px] sm:h-[700px] lg:h-[898px] overflow-hidden">
-        <Image
-          src="/images/img_gradient_image.png"
-          alt="Wooden Nest Hero"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        {/* Header Overlay */}
-        <div className="absolute top-0 left-0 w-full z-10">
-          <Header className="bg-transparent" />
-        </div>
-        {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-6 lg:px-8 z-10">
-          <div className="w-full max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16">
-              {/* Left Content */}
-              <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-2/3">
-                <h1 className="text-4xl sm:text-6xl lg:text-[130px] font-playfair-display font-semibold leading-tight text-global-12 tracking-wide">
-                  Дерев'яне
-                  <br />
-                  гніздо
-                </h1>
-                <p className="text-base sm:text-lg lg:text-[21px] font-montserrat font-normal leading-relaxed text-global-12 max-w-lg">
-                  Котеджне містечко з власним озером в<br />
-                  віковому лісі
-                </p>
-                {/* Location Badge */}
-                <div className="inline-flex items-center bg-global-3 rounded-2xl px-4 py-2 sm:px-6 sm:py-3">
-                  <span className="text-sm lg:text-[14px] font-montserrat font-normal text-global-12">
-                    Південний напрямок, траса Н01
-                  </span>
-                </div>
-                {/* Stats Section */}
-                <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-16 items-start">
-                  <div className="flex flex-col gap-1">
-                    <div className="flex items-end gap-4">
-                      <span className="text-4xl sm:text-5xl lg:text-[64px] font-montserrat font-medium text-global-12">
-                        10
-                      </span>
-                      <span className="text-2xl sm:text-3xl lg:text-[38px] font-montserrat font-medium text-global-12 mb-2">
-                        хв
-                      </span>
-                    </div>
-                    <span className="text-sm sm:text-base lg:text-[16px] font-montserrat font-normal text-global-12">
-                      від Глевахівського лісу
-                    </span>
-                  </div>
-                  <div className="w-px h-16 sm:h-20 lg:h-[84px] bg-global-6 hidden sm:block"></div>
-                  <div className="flex flex-col gap-1">
-                    <div className="flex items-end gap-4">
-                      <span className="text-4xl sm:text-5xl lg:text-[64px] font-montserrat font-medium text-global-12">
-                        80
-                      </span>
-                      <span className="text-2xl sm:text-3xl lg:text-[38px] font-montserrat font-medium text-global-12 mb-2">
-                        соток
-                      </span>
-                    </div>
-                    <span className="text-sm sm:text-base lg:text-[16px] font-montserrat font-normal text-global-12">
-                      зелені й приватності
-                    </span>
-                  </div>
-                  <div className="w-px h-16 sm:h-20 lg:h-[84px] bg-global-6 hidden sm:block"></div>
-                  <div className="flex flex-col gap-3 items-start">
-                    <Image
-                      src="/images/img_icon_white_a700_44x70.svg"
-                      alt="Clean Air"
-                      width={70}
-                      height={44}
-                      className="w-12 sm:w-16 lg:w-[70px] h-auto"
-                    />
-                    <span className="text-sm sm:text-base lg:text-[16px] font-montserrat font-normal text-global-12">
-                      чисте повітря
-                    </span>
-                  </div>
-                </div>
-                <Button
-                  variant="primary"
-                  size="md"
-                  onClick={() => handleSubmit('queue')}
-                  className="bg-global-3 text-global-12 w-fit"
-                >
-                  Записатися в чергу
-                </Button>
-              </div>
-              {/* Right Security Card */}
-              <div className="bg-global-9 backdrop-blur-sm rounded-[20px] p-4 sm:p-6 lg:p-8 w-full lg:w-1/3 max-w-md shadow-lg">
-                <div className="flex flex-col gap-4">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-2xl sm:text-3xl lg:text-[44px] font-montserrat font-medium text-global-12">
-                      Безпека
-                    </h3>
-                    <div className="flex gap-3 sm:gap-4">
-                      <Image
-                        src="/images/img_icon_white_a700.svg"
-                        alt="Security Feature"
-                        width={34}
-                        height={36}
-                        className="w-7 sm:w-8 h-7 sm:h-8"
-                      />
-                      <Image
-                        src="/images/img_icon_white_a700_36x34.svg"
-                        alt="Security Feature"
-                        width={34}
-                        height={36}
-                        className="w-7 sm:w-8 h-7 sm:h-8"
-                      />
-                      <Image
-                        src="/images/img_icon_36x34.svg"
-                        alt="Security Feature"
-                        width={34}
-                        height={36}
-                        className="w-7 sm:w-8 h-7 sm:h-8"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm sm:text-[15px] font-montserrat font-normal text-global-12 max-w-[50%]">
-                      Організована цілодобова охорона
-                    </span>
-                    <span className="text-sm lg:text-[14px] font-montserrat font-normal text-global-12">
-                      Комунікації на ділянці
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection />
       {/* Comfort Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
