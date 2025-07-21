@@ -11,7 +11,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[700px] sm:h-[800px] lg:h-[898px] overflow-hidden text-white">
+    <section className="relative w-full h-[1050px] sm:h-[800px] lg:min-h-[100vh] overflow-hidden text-white">
       {/* Background Image */}
       <Image
         src="/images/img_gradient_image.png"
@@ -27,11 +27,11 @@ export default function HeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className="absolute inset-0 z-10 flex flex-col justify-center px-4 sm:px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16">
+      <div className="absolute inset-0 z-10 flex flex-col justify-center mt-[100px] sm:mt-[150px] px-4 sm:px-6 lg:px-12">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16">
           {/* Left Side */}
-          <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-2/3">
-            <h1 className="text-5xl sm:text-6xl lg:text-[120px] leading-none font-playfair-display font-semibold">
+          <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-1/2">
+            <h1 className="text-6xl sm:text-7xl lg:text-[130px] leading-none font-playfair-display font-semibold">
               Дерев'яне <br /> гніздо
             </h1>
             <p className="text-lg lg:text-[20px] font-montserrat">
@@ -43,75 +43,81 @@ export default function HeroSection() {
               Південний напрямок, траса Н01
             </div>
 
-            {/* Features */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10 lg:gap-16">
-              {/* Feature 1 */}
-              <div className="flex flex-col">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-5xl lg:text-[64px] font-montserrat font-medium">10</span>
-                  <span className="text-2xl lg:text-[36px] font-montserrat font-medium mb-2">
-                    хв
-                  </span>
+            <div className="flex flex-column sm:flex-row justify-between">
+              {' '}
+              {/* Features */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10 lg:gap-16">
+                {/* Feature 1 */}
+                <div className="flex flex-col">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl lg:text-[64px] font-montserrat font-medium">10</span>
+                    <span className="text-2xl lg:text-[36px] font-montserrat font-medium mb-2">
+                      хв
+                    </span>
+                  </div>
+                  <p className="text-sm lg:text-base font-montserrat">від Глевахівського лісу</p>
                 </div>
-                <p className="text-sm lg:text-base font-montserrat">від Глевахівського лісу</p>
-              </div>
-
-              <div className="hidden sm:block w-px h-20 bg-white/30"></div>
-
-              {/* Feature 2 */}
-              <div className="flex flex-col">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-5xl lg:text-[64px] font-montserrat font-medium">80</span>
-                  <span className="text-2xl lg:text-[36px] font-montserrat font-medium mb-2">
-                    соток
-                  </span>
+                <div className="hidden sm:block w-px h-20 bg-white/30"></div>
+                {/* Feature 2 */}
+                <div className="flex flex-col">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl lg:text-[64px] font-montserrat font-medium">80</span>
+                    <span className="text-2xl lg:text-[36px] font-montserrat font-medium mb-2">
+                      соток
+                    </span>
+                  </div>
+                  <p className="text-sm lg:text-base font-montserrat">зелені й приватності</p>
                 </div>
-                <p className="text-sm lg:text-base font-montserrat">зелені й приватності</p>
-              </div>
-
-              <div className="hidden sm:block w-px h-20 bg-white/30"></div>
-
-              {/* Feature 3 */}
-              <div className="flex flex-col items-start">
-                <Image
-                  src="/images/img_icon_white_a700_44x70.svg"
-                  alt="Чисте повітря"
-                  width={60}
-                  height={44}
-                />
-                <p className="text-sm lg:text-base font-montserrat mt-2">чисте повітря</p>
+                <div className="hidden sm:block w-px h-20 bg-white/30"></div>
+                {/* Feature 3 */}
+                <div className="flex flex-col items-start">
+                  <Image
+                    src="/images/img_icon_white_a700_44x70.svg"
+                    alt="Чисте повітря"
+                    width={60}
+                    height={44}
+                  />
+                  <p className="text-sm lg:text-base font-montserrat mt-2">чисте повітря</p>
+                </div>{' '}
               </div>
             </div>
-
-            {/* CTA */}
-            <Button
-              variant="primary"
-              size="md"
-              onClick={() => handleSubmit('queue')}
-              className="bg-[#4A6240] hover:bg-[#3e5036] text-white px-6 py-3 rounded-lg w-fit"
-            >
-              Записатися в чергу
-            </Button>
           </div>
 
-          {/* Security Card */}
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 w-full lg:w-1/3 max-w-md shadow-md text-white">
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-2xl lg:text-[36px] font-semibold font-montserrat">Безпека</h3>
-              <div className="flex gap-3">
-                <Image src="/images/img_icon_white_a700.svg" alt="icon1" width={32} height={32} />
-                <Image
-                  src="/images/img_icon_white_a700_36x34.svg"
-                  alt="icon2"
-                  width={32}
-                  height={32}
-                />
-                <Image src="/images/img_icon_36x34.svg" alt="icon3" width={32} height={32} />
+          <div className="flex flex-col justify-between h-full gap-10 w-full lg:w-1/3">
+            {' '}
+            {/* Security Card */}
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 max-w-md md:w-full shadow-md text-white lg:self-end">
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-2xl lg:text-[36px] font-semibold font-montserrat">Безпека</h3>
+                <div className="flex gap-3">
+                  <Image src="/images/img_icon_white_a700.svg" alt="icon1" width={32} height={32} />
+                  <Image
+                    src="/images/img_icon_white_a700_36x34.svg"
+                    alt="icon2"
+                    width={32}
+                    height={32}
+                  />
+                  <Image src="/images/img_icon_36x34.svg" alt="icon3" width={32} height={32} />
+                </div>
+              </div>
+
+              <div className="flex text-sm lg:text-base font-montserrat">
+                <span className="w-1/2 pr-4">Організована цілодобова охорона</span>
+                <div className="w-px bg-white/50 mx-2" /> {/* ← вертикальная палочка */}
+                <span className="w-1/2 text-right pl-4">Комунікації на ділянці</span>
               </div>
             </div>
-            <div className="flex justify-between text-sm lg:text-base font-montserrat">
-              <span className="w-1/2">Організована цілодобова охорона</span>
-              <span className="text-right w-1/2">Комунікації на ділянці</span>
+            <div className="lg:self-end">
+              {' '}
+              {/* CTA */}
+              <Button
+                variant="primary"
+                size="md"
+                onClick={() => handleSubmit('queue')}
+                className="bg-[#4A6240] hover:bg-[#3e5036] text-white px-6 py-3 rounded-lg w-fit mb-16 sm:mb-0"
+              >
+                Записатися в чергу
+              </Button>
             </div>
           </div>
         </div>

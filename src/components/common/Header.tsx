@@ -10,14 +10,17 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className={`w-full ${className}`}>
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row justify-between items-center py-4 lg:py-8 gap-4 lg:gap-0">
+    <header
+      className={`w-full py-12 sm:py-16 lg:py-10 px-4 sm:px-6 lg:px-8
+${className}`}
+    >
+      <div className="container mx-auto">
+        <div className="flex flex-row justify-between items-left gap-4 lg:gap-0">
           {/* Logo and Brand Section */}
-          <div className="flex flex-row gap-4 sm:gap-5 justify-center items-center w-full lg:w-auto">
+          <div className="flex flex-row gap-4 sm:gap-5 justify-left items-center w-full lg:w-auto">
             <div className="w-[50px] sm:w-[60px] lg:w-[70px]">
-              <Image 
-                src="/images/img_link.svg" 
+              <Image
+                src="/images/img_link.svg"
                 alt="Wooden Nest Logo"
                 width={70}
                 height={82}
@@ -35,13 +38,18 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           </div>
 
           {/* Hamburger Menu Icon (Mobile only) */}
-          <button 
-            className="block lg:hidden p-3 text-global-12" 
+          <button
+            className="block lg:hidden p-3 text-global-12"
             aria-label="Open menu"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
 
@@ -50,25 +58,25 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 py-4 lg:py-0">
               {/* Menu Items */}
               <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-                <button 
+                <button
                   role="menuitem"
                   className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
                 >
                   Генплан
                 </button>
-                <button 
+                <button
                   role="menuitem"
                   className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
                 >
                   Сучасні будинки
                 </button>
-                <button 
+                <button
                   role="menuitem"
                   className="text-xs sm:text-sm lg:text-[14px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
                 >
                   Про нас
                 </button>
-                <button 
+                <button
                   role="menuitem"
                   className="text-xs sm:text-sm lg:text-[14px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
                 >
@@ -78,14 +86,14 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
 
               {/* Contact Info */}
               <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-center">
-                <div 
-                  role="menuitem" 
-                  aria-haspopup="true" 
+                <div
+                  role="menuitem"
+                  aria-haspopup="true"
                   aria-expanded="false"
                   className="flex flex-row gap-3 lg:gap-4 justify-center items-center"
                 >
-                  <Image 
-                    src="/images/img_icon.svg" 
+                  <Image
+                    src="/images/img_icon.svg"
                     alt="Phone Icon"
                     width={22}
                     height={20}
@@ -99,8 +107,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 {/* Social Links */}
                 <div className="flex flex-row gap-4 lg:gap-8 items-center">
                   <a href="#" className="hover:opacity-80 transition-opacity duration-200">
-                    <Image 
-                      src="/images/img_link_white_a700.svg" 
+                    <Image
+                      src="/images/img_link_white_a700.svg"
                       alt="Social Link"
                       width={22}
                       height={18}
@@ -108,8 +116,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                     />
                   </a>
                   <a href="#" className="hover:opacity-80 transition-opacity duration-200">
-                    <Image 
-                      src="/images/img_link_white_a700_18x18.svg" 
+                    <Image
+                      src="/images/img_link_white_a700_18x18.svg"
                       alt="Social Link"
                       width={18}
                       height={18}

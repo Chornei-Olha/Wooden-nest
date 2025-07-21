@@ -29,23 +29,6 @@ interface PropertyCardProps {
   terrace: string;
 }
 
-const faqs = [
-  { number: 1, question: 'Де знаходиться котеджне містечко?', answer: '...' },
-  { number: 2, question: 'Коли планується старт будівництва?', answer: '...' },
-  { number: 3, question: 'Чи можна вже забронювати ділянку або дім?', answer: '...' },
-  { number: 4, question: 'Чи буде охорона, КПП та закрита територія?', answer: '...' },
-  { number: 5, question: 'Які комунікації передбачені?', answer: '...' },
-  {
-    number: 6,
-    question: 'Чи є можливість внести індивідуальні зміни в проєкт будинку?',
-    answer: 'так',
-  },
-  { number: 7, question: 'Яка орієнтовна вартість будинку/ділянки на старті?', answer: '...' },
-  { number: 8, question: 'Яка інфраструктура є в містечку?', answer: '...' },
-  { number: 9, question: 'Чи буде на території інфраструктура?', answer: '...' },
-  { number: 10, question: 'Чи доступна іпотека або розстрочка?', answer: '...' },
-];
-
 const PropertyCard: React.FC<PropertyCardProps> = ({
   image,
   area,
