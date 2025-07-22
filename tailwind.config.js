@@ -43,6 +43,15 @@ module.exports = {
           background1: 'var(--edittext-bg-1)',
         },
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

@@ -153,7 +153,7 @@ export default function Footer() {
                       alt="Phone Call"
                       width={60}
                       height={60}
-                      className="w-12 sm:w-14 lg:w-[60px] h-12 sm:h-14 lg:h-[60px]"
+                      className="w-12 sm:w-14 lg:w-[60px] h-12 sm:h-14 lg:h-[60px] animate-wiggle"
                     />
                   </div>
                 </a>
