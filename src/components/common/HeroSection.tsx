@@ -119,7 +119,7 @@ export default function HeroSection() {
                     el.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="bg-[#4A6240] hover:bg-[#3e5036] text-white px-6 py-3 rounded-lg w-fit mb-16 sm:mb-0"
+                className="bg-[#4A6240] hover:bg-[#3e5036] text-white px-6 py-3 rounded-lg w-fit mb-0 sm:mb-10"
               >
                 Записатися в чергу
               </Button>
