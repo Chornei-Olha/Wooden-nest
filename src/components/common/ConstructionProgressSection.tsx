@@ -68,7 +68,7 @@ export default function ConstructionProgressSection() {
 
         <div className="bg-[url('/images/bg-pattern.png')] bg-cover bg-center flex items-center justify-center h-full py-2 rounded-lg">
           <Image
-            src="/images/img__1.png"
+            src="/images/img__1.webp"
             alt="Woodnest"
             width={400}
             height={600}
