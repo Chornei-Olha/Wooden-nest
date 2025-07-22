@@ -603,7 +603,7 @@ const WoodenNestPage: React.FC = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="px-4 sm:px-6 lg:px-8 bg-global-4 mx-2 sm:mx-5 lg:mx-10 my-16">
+      <section className="py-4 sm:py-0 px-4 sm:px-6 lg:px-8 bg-global-4 mx-2 sm:mx-5 lg:mx-10 my-10">
         <div className="w-full container mx-auto">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="w-full lg:w-1/2">

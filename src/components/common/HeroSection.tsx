@@ -17,7 +17,14 @@ export default function HeroSection() {
         src="/images/bg_gradient.webp"
         alt="Wooden Nest Hero"
         fill
-        className="object-cover"
+        className="object-cover hidden sm:block"
+        priority
+      />
+      <Image
+        src="/images/bg_gradient_mobile.webp"
+        alt="Wooden Nest Hero"
+        fill
+        className="object-cover sm:hidden"
         priority
       />
 
