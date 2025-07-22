@@ -2,7 +2,10 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-global-3 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 relative">
+    <footer
+      id="contacts"
+      className="bg-global-3 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 relative"
+    >
       <div className="absolute inset-0">
         <Image
           src="/images/img__5.png"
@@ -44,9 +47,13 @@ export default function Footer() {
               </div>
 
               <div className="flex gap-4 sm:gap-5">
-                <span className="text-lg sm:text-xl lg:text-[20px] font-montserrat font-normal text-global-12">
+                <a
+                  href="tel:+380984838855"
+                  className="text-lg sm:text-xl lg:text-[20px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
+                >
                   +38(098) 483-88-55
-                </span>
+                </a>
+
                 <Image
                   src="/images/img_link_white_a700.svg"
                   alt="Telegram"
@@ -83,19 +90,19 @@ export default function Footer() {
                 Головна
               </a>
               <a
-                href="#"
+                href="#houses"
                 className="text-sm sm:text-base lg:text-[16px] font-montserrat text-global-12 hover:underline"
               >
                 Сучасні будинки
               </a>
               <a
-                href="#"
+                href="#about"
                 className="text-sm sm:text-base lg:text-[16px] font-montserrat text-global-12 hover:underline"
               >
                 Про нас
               </a>
               <a
-                href="#"
+                href="#contacts"
                 className="text-sm sm:text-base lg:text-[16px] font-montserrat text-global-12 hover:underline"
               >
                 Контакти
@@ -112,17 +119,23 @@ export default function Footer() {
                   <span className="text-sm sm:text-base lg:text-[16px] font-montserrat font-medium uppercase text-global-11">
                     Прокласти маршрут
                   </span>
-                  <div
-                    className="w-6 sm:w-8 h-6 sm:h-8 bg-cover bg-center rounded-2xl"
-                    style={{ backgroundImage: 'url(/images/img_background.svg)' }}
-                  ></div>
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&origin=Київ&destination=Нові+Безрадичі,+Київська+область"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div
+                      className="w-6 sm:w-8 h-6 sm:h-8 bg-cover bg-center rounded-2xl"
+                      style={{ backgroundImage: 'url(/images/img_background.svg)' }}
+                    ></div>
+                  </a>
                 </div>
                 <div className="space-y-2">
                   <span className="text-xs lg:text-[12px] font-montserrat font-normal text-global-12 block">
-                    Час роботи
+                    Години роботи
                   </span>
                   <span className="text-sm sm:text-[15px] font-montserrat font-normal text-global-12">
-                    9:00-20:00
+                    09:00 - 20:00
                   </span>
                 </div>
               </div>
@@ -130,18 +143,20 @@ export default function Footer() {
                 className="w-16 sm:w-20 lg:w-[98px] h-16 sm:h-20 lg:h-[98px] bg-cover bg-center rounded-lg ml-auto"
                 style={{ backgroundImage: 'url(/images/img_search.svg)' }}
               >
-                <div
-                  className="w-full h-full flex items-center justify-center bg-cover bg-center"
-                  style={{ backgroundImage: 'url(/images/img_phonecall3svg.svg)' }}
-                >
-                  <Image
-                    src="/images/img_phone_call_2_svg.svg"
-                    alt="Phone Call"
-                    width={60}
-                    height={60}
-                    className="w-12 sm:w-14 lg:w-[60px] h-12 sm:h-14 lg:h-[60px]"
-                  />
-                </div>
+                <a href="tel:+380984838855">
+                  <div
+                    className="w-full h-full flex items-center justify-center bg-cover bg-center cursor-pointer"
+                    style={{ backgroundImage: 'url(/images/img_phonecall3svg.svg)' }}
+                  >
+                    <Image
+                      src="/images/img_phone_call_2_svg.svg"
+                      alt="Phone Call"
+                      width={60}
+                      height={60}
+                      className="w-12 sm:w-14 lg:w-[60px] h-12 sm:h-14 lg:h-[60px]"
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

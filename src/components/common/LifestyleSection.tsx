@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button';
 
 export default function LifestyleSection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="houses" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0">
         <Image src="/images/img__0x0.png" alt="Background" fill className="object-cover" />
       </div>
@@ -16,7 +16,7 @@ export default function LifestyleSection() {
 
           <div className="flex flex-col lg:flex-row gap-10">
             <div className="max-w-2xl mx-auto space-y-8 lg:space-y-12">
-              <h3 className="text-3xl sm:text-4xl lg:text-[44px] font-playfair-display font-semibold text-global-5 mb-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-[44px] font-playfair font-semibold text-global-5 mb-8">
                 Дерев&apos;яне гніздо-
                 <br />
                 це особливий спосіб
@@ -38,7 +38,17 @@ export default function LifestyleSection() {
                 Ми вже на етапі активного планування, щоб зробити цей проєкт унікальним і справжнім
                 домом для родин, які цінують якість життя
               </p>
-              <Button variant="primary" size="md" className="bg-global-3 text-global-12">
+              <Button
+                variant="primary"
+                size="md"
+                onClick={() => {
+                  const el = document.getElementById('application-form');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="bg-global-3 text-global-12"
+              >
                 Отримати консультацію
               </Button>
             </div>

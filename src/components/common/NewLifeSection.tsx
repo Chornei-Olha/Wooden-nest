@@ -41,7 +41,7 @@ export default function NewLifeSection() {
                   Ваш будинок. Ваш простір. Ваш час.
                 </span>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-playfair-display font-semibold leading-tight text-global-12">
+                <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-playfair font-semibold leading-tight text-global-12">
                   Тут починається ваше нове життя
                 </h2>
 
@@ -53,7 +53,12 @@ export default function NewLifeSection() {
                 <Button
                   variant="primary"
                   size="md"
-                  onClick={() => handleSubmit('queue')}
+                  onClick={() => {
+                    const el = document.getElementById('application-form');
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   className="bg-global-3 text-global-12 w-fit"
                 >
                   Записатися в чергу

@@ -7,7 +7,7 @@ type Props = {
 
 export default function FeatureIntroSection({ handleSubmit }: Props) {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0">
         <Image src="/images/background.webp" alt="Background" fill className="object-cover" />
         <div className="absolute inset-0"></div>
@@ -15,7 +15,7 @@ export default function FeatureIntroSection({ handleSubmit }: Props) {
 
       <div className="relative w-full container mx-auto text-center">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 lg:mb-[317px]">
-          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair-display font-semibold text-global-12 leading-tight max-w-2xl text-left">
+          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair font-semibold text-global-12 leading-tight max-w-2xl text-left">
             Дерев'яне гніздо — там, де починається життя
           </h2>
 
@@ -27,7 +27,12 @@ export default function FeatureIntroSection({ handleSubmit }: Props) {
             <Button
               variant="primary"
               size="sm"
-              onClick={() => handleSubmit('queue')}
+              onClick={() => {
+                const el = document.getElementById('application-form');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="bg-global-3 text-global-12 w-[50%]"
             >
               Записатися в чергу

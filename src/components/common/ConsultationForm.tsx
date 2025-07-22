@@ -19,7 +19,7 @@ export default function ConsultationForm() {
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="application-form" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="w-full container mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
           <div className="w-full lg:w-1/2">
@@ -34,7 +34,7 @@ export default function ConsultationForm() {
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col gap-6 sm:gap-8">
               <div className="space-y-2 sm:space-y-4">
-                <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair-display font-semibold text-global-5">
+                <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair font-semibold text-global-5">
                   Отримати консультацію
                 </h2>
                 <p className="text-sm lg:text-[14px] font-montserrat font-normal leading-relaxed text-global-5">

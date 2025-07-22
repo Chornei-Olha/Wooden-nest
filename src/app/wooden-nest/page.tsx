@@ -39,7 +39,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   terrace,
 }) => {
   return (
-    <div className="flex flex-col gap-4 sm:gap-5 w-full max-w-[366px] mx-auto">
+    <div id="plans" className="flex flex-col gap-4 sm:gap-5 w-full max-w-[366px] mx-auto">
       <div className="relative w-full h-[200px] sm:h-[244px] bg-global-1 rounded-lg overflow-hidden">
         <Image
           src={image}
@@ -231,7 +231,7 @@ const WoodenNestPage: React.FC = () => {
           <div className="flex flex-col gap-10">
             {/* Текстовая часть */}
             <div className="lg:w-full flex flex-col lg:flex-row justify-start">
-              <h2 className="lg:w-1/2 text-2xl sm:text-3xl lg:text-[40px] font-playfair-display font-semibold leading-tight text-global-5 mb-6">
+              <h2 className="lg:w-1/2 text-2xl sm:text-3xl lg:text-[40px] font-playfair font-semibold leading-tight text-global-5 mb-6">
                 Створюємо комфорт для
                 <br />
                 життя за містом
@@ -475,10 +475,10 @@ const WoodenNestPage: React.FC = () => {
         </div>
       </section>
       {/* Master Plan Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <section id="genplan" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="w-full ">
           <div className="flex flex-col gap-6 sm:gap-8">
-            <h2 className="container mx-auto text-3xl sm:text-4xl lg:text-[44px] font-playfair-display font-semibold text-global-5">
+            <h2 className="container mx-auto text-3xl sm:text-4xl lg:text-[44px] font-playfair font-semibold text-global-5">
               Генплан
             </h2>
             {/* Amenities Chips */}
@@ -618,7 +618,7 @@ const WoodenNestPage: React.FC = () => {
             <div className="w-full lg:w-1/2 bg-global-4 p-6 sm:p-8 lg:p-12 rounded-lg">
               <div className="flex flex-col gap-6 sm:gap-8">
                 <div className="space-y-4 sm:space-y-6">
-                  <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair-display font-semibold text-global-12">
+                  <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair font-semibold text-global-12">
                     Маєте питання? Ми поруч!
                   </h2>
                   <p className="text-sm lg:text-[14px] font-montserrat font-normal leading-relaxed text-global-12">

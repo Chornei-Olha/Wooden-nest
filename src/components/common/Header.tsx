@@ -68,18 +68,30 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 py-4 lg:py-0">
               {/* Menu Items */}
               <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-center">
-                <button className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200">
+                <a
+                  href="#genplan"
+                  className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
+                >
                   Генплан
-                </button>
-                <button className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200">
+                </a>
+                <a
+                  href="#houses"
+                  className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
+                >
                   Сучасні будинки
-                </button>
-                <button className="text-xs sm:text-sm lg:text-[14px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200">
+                </a>
+                <a
+                  href="#about"
+                  className="text-xs sm:text-sm lg:text-[14px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
+                >
                   Про нас
-                </button>
-                <button className="text-xs sm:text-sm lg:text-[14px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200">
+                </a>
+                <a
+                  href="#contacts"
+                  className="text-xs sm:text-sm lg:text-[14px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
+                >
                   Контакти
-                </button>
+                </a>
               </div>
 
               {/* Contact Info */}
@@ -92,9 +104,12 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                     height={20}
                     className="w-[18px] sm:w-[20px] lg:w-[22px] h-auto"
                   />
-                  <span className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12">
+                  <a
+                    href="tel:+380984838855"
+                    className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12 hover:text-global-11 transition-colors duration-200"
+                  >
                     +38(098) 483-88-55
-                  </span>
+                  </a>
                 </div>
 
                 {/* Social Links */}
@@ -142,10 +157,18 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
 
           {/* Menu Items */}
           <div className="flex flex-col gap-6 items-center text-center">
-            <button className="text-base font-montserrat text-global-1">Генплан</button>
-            <button className="text-base font-montserrat text-global-1">Сучасні будинки</button>
-            <button className="text-base font-montserrat text-global-1">Про нас</button>
-            <button className="text-base font-montserrat text-global-1">Контакти</button>
+            <a href="#genplan" className="text-base font-montserrat text-global-1">
+              Генплан
+            </a>
+            <a href="#houses" className="text-base font-montserrat text-global-1">
+              Сучасні будинки
+            </a>
+            <a href="#about" className="text-base font-montserrat text-global-1">
+              Про нас
+            </a>
+            <a href="#contacts" className="text-base font-montserrat text-global-1">
+              Контакти
+            </a>
           </div>
 
           {/* Contact & Socials */}

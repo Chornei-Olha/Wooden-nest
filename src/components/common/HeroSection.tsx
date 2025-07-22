@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16">
           {/* Left Side */}
           <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-1/2">
-            <h1 className="text-5xl sm:text-7xl lg:text-[130px] leading-none font-playfair-display font-semibold">
+            <h1 className="text-5xl sm:text-7xl lg:text-[130px] leading-none font-playfair font-semibold">
               Дерев'яне <br /> гніздо
             </h1>
             <p className="text-lg lg:text-[20px] font-montserrat">
@@ -113,7 +113,12 @@ export default function HeroSection() {
               <Button
                 variant="primary"
                 size="md"
-                onClick={() => handleSubmit('queue')}
+                onClick={() => {
+                  const el = document.getElementById('application-form');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="bg-[#4A6240] hover:bg-[#3e5036] text-white px-6 py-3 rounded-lg w-fit mb-16 sm:mb-0"
               >
                 Записатися в чергу

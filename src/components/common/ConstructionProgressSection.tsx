@@ -12,7 +12,7 @@ export default function ConstructionProgressSection() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       {/* Блок с очередями */}
-      <div className="relative" style={{ backgroundImage: 'url(/images/bg-small.png)' }}>
+      <div className="relative" style={{ backgroundImage: 'url(/images/frame-bg1.png)' }}>
         <div className="container mx-auto py-16">
           <h2 className="text-3xl lg:text-[36px] font-unbounded font-extralight uppercase text-center sm:text-left text-white mb-10">
             Хід будівництва
@@ -25,7 +25,15 @@ export default function ConstructionProgressSection() {
           </div>
 
           <div className="text-center">
-            <button className="bg-white text-global-3 px-6 py-3 rounded-full font-unbounded font-light text-lg">
+            <button
+              onClick={() => {
+                const el = document.getElementById('plans');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-white text-global-3 px-6 py-3 rounded-full font-unbounded font-light text-lg"
+            >
               Дивитись планування →
             </button>
           </div>
@@ -82,7 +90,12 @@ export default function ConstructionProgressSection() {
       {/* Кнопка записи */}
       <div className="text-center mt-10">
         <button
-          onClick={() => handleSubmit('queue')}
+          onClick={() => {
+            const el = document.getElementById('application-form');
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
           className="bg-global-3 text-white px-10 py-5 rounded-md text-lg font-unbounded"
         >
           Записатися в чергу
@@ -96,8 +109,10 @@ export default function ConstructionProgressSection() {
 function Stage({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <div className="border border-white p-6 m-2">
-      <h3 className="text-[36px] font-unbounded font-extralight text-white mb-2">{title}</h3>
-      <p className="text-xl text-white">{subtitle}</p>
+      <h3 className="font-unbounded text-3xl md:text-4xl lg:text-6xl font-extralight text-white mb-3">
+        {title}
+      </h3>
+      <p className="font-unbounded text-base lg:text-xl font-extralight text-white">{subtitle}</p>
     </div>
   );
 }
