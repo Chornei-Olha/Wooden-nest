@@ -14,7 +14,7 @@ const faqs: FAQItem[] = [
     number: 1,
     question: 'Де знаходиться котеджне містечко?',
     answer:
-      'Котеджне містечко «Дерев’яне гніздо» розташоване в селі Нові Безрадичі, Київська область — усього за кількадесят хвилин їзди від столиці.',
+      'Котеджне містечко «Woodnest» розташоване в селі Нові Безрадичі, Київська область — усього за кількадесят хвилин їзди від столиці.',
   },
   {
     number: 2,
@@ -108,8 +108,8 @@ export default function FAQSection() {
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-7xl mx-auto">
         <div className="text-center mb-8 lg:mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair-display font-semibold text-global-5">
-            Популярні запитання про Дерев'яне гніздо
+          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair font-semibold text-global-5">
+            Популярні запитання про Woodnest
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">

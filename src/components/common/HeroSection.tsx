@@ -15,14 +15,14 @@ export default function HeroSection() {
       {/* Background Image */}
       <Image
         src="/images/bg_gradient.webp"
-        alt="Wooden Nest Hero"
+        alt="Woodnest Hero"
         fill
         className="object-cover hidden sm:block"
         priority
       />
       <Image
         src="/images/bg_gradient_mobile.webp"
-        alt="Wooden Nest Hero"
+        alt="Woodnest Hero"
         fill
         className="object-cover sm:hidden"
         priority
@@ -39,7 +39,7 @@ export default function HeroSection() {
           {/* Left Side */}
           <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-1/2">
             <h1 className="text-5xl sm:text-7xl lg:text-[130px] leading-none font-playfair font-semibold">
-              Дерев'яне <br /> гніздо
+              Woodnest
             </h1>
             <p className="text-lg lg:text-[20px] font-montserrat">
               Котеджне містечко з власним озером в віковому лісі

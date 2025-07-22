@@ -16,7 +16,7 @@ export default function FeatureIntroSection({ handleSubmit }: Props) {
       <div className="relative w-full container mx-auto text-center">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 lg:mb-[317px]">
           <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-playfair font-semibold text-global-12 leading-tight max-w-2xl text-left">
-            Дерев'яне гніздо — там, де починається життя
+            Woodnest — там, де починається життя
           </h2>
 
           <div className="flex flex-col gap-4 sm:gap-6 max-w-md">

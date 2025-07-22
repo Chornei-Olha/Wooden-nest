@@ -36,9 +36,7 @@ export default function Footer() {
                 </div>
                 <div className="mb-4">
                   <h3 className="text-2xl sm:text-3xl lg:text-[36px] font-montserrat font-semibold text-global-12 leading-tight">
-                    Дерев'яне
-                    <br />
-                    гніздо
+                    Woodnest
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal text-global-12">
                     котеджне містечко

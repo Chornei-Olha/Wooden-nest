@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             <div className="w-[50px] sm:w-[60px] lg:w-[70px]">
               <Image
                 src="/images/img_link.svg"
-                alt="Wooden Nest Logo"
+                alt="Woodnest Logo"
                 width={70}
                 height={82}
                 className="w-full h-auto"
@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             </div>
             <div className="text-center lg:text-left">
               <h1 className="text-lg sm:text-2xl lg:text-[36px] font-montserrat font-semibold leading-tight text-global-12">
-                Дерев'яне гніздо
+                Woodnest
               </h1>
               <p className="text-xs sm:text-sm lg:text-[13px] font-montserrat font-normal leading-relaxed text-global-12 mt-1">
                 котеджне містечко

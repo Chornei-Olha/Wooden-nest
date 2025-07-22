@@ -7,7 +7,7 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Дерев'яне гніздо",
+  title: 'Woodnest',
   description: 'Котеджне містечко з власним озером в віковому лісі',
   icons: {
     icon: [{ url: '/favicon.png', type: 'image/x-icon' }],

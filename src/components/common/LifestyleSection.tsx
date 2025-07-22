@@ -11,13 +11,13 @@ export default function LifestyleSection() {
       <div className="relative w-full max-w-7xl mx-auto">
         <div className="text-left mb-12 lg:mb-16">
           <h2 className="text-5xl sm:text-8xl lg:text-[115px] font-montserrat font-thin uppercase text-global-8 leading-tight mb-8 lg:mb-16">
-            Дерев&apos;яне гніздо об&apos;єднує
+            Woodnest об&apos;єднує
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-10">
             <div className="max-w-2xl mx-auto space-y-8 lg:space-y-12">
               <h3 className="text-3xl sm:text-4xl lg:text-[44px] font-playfair font-semibold text-global-5 mb-8">
-                Дерев&apos;яне гніздо-
+                Woodnest -
                 <br />
                 це особливий спосіб
                 <br />

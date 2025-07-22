@@ -38,7 +38,7 @@ export default function ConsultationForm() {
                   Отримати консультацію
                 </h2>
                 <p className="text-sm lg:text-[14px] font-montserrat font-normal leading-relaxed text-global-5">
-                  Дізнайтеся більше про Дерев'яне гніздо. Залиште контактні дані, ми вам
+                  Дізнайтеся більше про Woodnest. Залиште контактні дані, ми вам
                   <br />
                   передзвонимо і відповімо на всі ваші запитання.
                 </p>

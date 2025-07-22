@@ -323,8 +323,8 @@ const WoodenNestPage: React.FC = () => {
                 </div>
                 <div className="space-y-4 sm:space-y-6">
                   <p className="text-sm lg:text-[14px] font-montserrat leading-relaxed text-global-2">
-                    <span className="font-medium">Деревяне гніздо</span> - це закрите приватне
-                    містечко, його територія
+                    <span className="font-medium">Woodnest</span> - це закрите приватне містечко,
+                    його територія
                     <br />
                     повністю обгороджена і цілодобово охороняється.
                   </p>
