@@ -11,14 +11,14 @@ export default function NewLifeSection() {
   }, []);
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="relative py-10 sm:py-20 lg:py-20 pb-0 px-4 sm:px-6 lg:px-8 ">
       {/* Фоновый узор */}
-      <div className="container mx-auto absolute inset-0 top-[-440px] lg:top-[-600px]">
-        <Image src="/images/tree.svg" alt="Background Pattern" fill className="object-contain" />
-      </div>
 
       {/* Контент с картинкой и текстом */}
       <div className="container relative z-10 mx-auto">
+        <div className="container mx-auto absolute inset-0 top-[-440px] sm:top-[-470px] md:top-[-550px] lg:top-[-600px] w-full overflow-hidden">
+          <Image src="/images/tree.svg" alt="Background Pattern" fill className="object-contain" />
+        </div>
         <div className="rounded-lg overflow-hidden shadow-xl">
           <div className="relative w-full h-[420px] md:h-[500px] lg:h-[550px]">
             {/* Фоновое изображение дома */}

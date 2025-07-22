@@ -11,7 +11,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[1050px] sm:h-[800px] lg:min-h-[100vh] overflow-hidden text-white">
+    <section className="relative w-full h-[950px] sm:h-[850px] lg:min-h-[100vh] overflow-hidden text-white">
       {/* Background Image */}
       <Image
         src="/images/bg_gradient.webp"
@@ -83,10 +83,10 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between h-full gap-10 w-full lg:w-1/3">
+          <div className="flex flex-col justify-between h-full gap-10 w-full lg:w-1/2">
             {' '}
             {/* Security Card */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 max-w-md md:w-full shadow-md text-white lg:self-end">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 max-w-[490px] md:w-full shadow-md text-white lg:self-end">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-2xl lg:text-[36px] font-semibold font-montserrat">Безпека</h3>
                 <div className="flex gap-3">
