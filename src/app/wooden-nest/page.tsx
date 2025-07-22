@@ -303,7 +303,7 @@ const WoodenNestPage: React.FC = () => {
       <NewLifeSection />
 
       {/* Features Sections */}
-      <section className="py-0 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 sm:py-0 px-4 sm:px-6 lg:px-8">
         <div className="w-full container mx-auto space-y-10 sm:space-y-17 lg:space-y-17">
           {/* Security Feature */}
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center">
