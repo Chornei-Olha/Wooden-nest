@@ -505,14 +505,14 @@ const WoodenNestPage: React.FC = () => {
           >
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-4 mb-6">
-                <div className="w-16 sm:w-20 lg:w-[260px] h-3 bg-global-7"></div>
+                <div className="w-[70px] sm:w-[150px] md:w-[200px] lg:w-[280px] h-3 bg-global-7"></div>
                 <div className="text-center">
                   <div className="text-2xl sm:text-3xl lg:text-[47px] font-montserrat leading-tight ">
                     <h3 className="text-global-1 font-normal pb-[20px]">Оберіть</h3>
                     <h3 className="text-global-1 font-bold uppercase">будинок мрії</h3>{' '}
                   </div>
                 </div>
-                <div className="w-16 sm:w-20 lg:w-[260px] h-3 bg-global-7"></div>
+                <div className="w-[70px] sm:w-[150px] md:w-[200px] lg:w-[280px] h-3 bg-global-7"></div>
               </div>
             </div>
             {/* Interactive Map */}
