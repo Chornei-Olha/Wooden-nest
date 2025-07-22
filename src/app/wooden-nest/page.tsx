@@ -303,10 +303,10 @@ const WoodenNestPage: React.FC = () => {
       <NewLifeSection />
 
       {/* Features Sections */}
-      <section className="py-12 sm:py-16 lg:py-0 px-4 sm:px-6 lg:px-8">
-        <div className="w-full container mx-auto space-y-16 sm:space-y-20 lg:space-y-24">
+      <section className="py-0 px-4 sm:px-6 lg:px-8">
+        <div className="w-full container mx-auto space-y-10 sm:space-y-17 lg:space-y-17">
           {/* Security Feature */}
-          <div className="flex flex-col lg:flex-row gap-5 lg:gap-8 items-center">
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center">
             <div className="w-full lg:w-1/2 order-2 lg:order-1">
               <div className="flex flex-col gap-6 sm:gap-8">
                 <div className="flex items-center gap-4">
@@ -348,7 +348,7 @@ const WoodenNestPage: React.FC = () => {
             </div>
           </div>
           {/* Recreation Zones */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center">
             <div className="w-full lg:w-1/2">
               <Image
                 src="/images/zone_2.webp"
@@ -387,7 +387,7 @@ const WoodenNestPage: React.FC = () => {
             </div>
           </div>
           {/* Infrastructure */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center">
             <div className="w-full lg:w-1/2 order-2 lg:order-1">
               <div className="flex flex-col gap-6 sm:gap-8">
                 <div className="flex items-center gap-4">
@@ -422,7 +422,7 @@ const WoodenNestPage: React.FC = () => {
           </div>
           {/* Community Development */}
           <div className="relative">
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+            <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center">
               <div className="w-full lg:w-1/2">
                 <Image
                   src="/images/zone_4.webp"
