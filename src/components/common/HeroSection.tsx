@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import { useCallback } from 'react';
 import Header from './Header';
+import CountUp from 'react-countup';
 
 export default function HeroSection() {
   const handleSubmit = useCallback((action: string) => {
@@ -57,7 +58,13 @@ export default function HeroSection() {
                 {/* Feature 1 */}
                 <div className="flex flex-col">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl lg:text-[64px] font-montserrat font-medium">10</span>
+                    <CountUp
+                      end={10}
+                      duration={1.5}
+                      className="text-5xl lg:text-[64px] font-montserrat font-medium"
+                    />
+
+                    {/* <span className="text-5xl lg:text-[64px] font-montserrat font-medium">10</span> */}
                     <span className="text-2xl lg:text-[36px] font-montserrat font-medium mb-2">
                       хв
                     </span>
@@ -68,7 +75,13 @@ export default function HeroSection() {
                 {/* Feature 2 */}
                 <div className="flex flex-col">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl lg:text-[64px] font-montserrat font-medium">80</span>
+                    <CountUp
+                      end={80}
+                      duration={1.5}
+                      className="text-5xl lg:text-[64px] font-montserrat font-medium"
+                    />
+
+                    {/* <span className="text-5xl lg:text-[64px] font-montserrat font-medium">80</span> */}
                     <span className="text-2xl lg:text-[36px] font-montserrat font-medium mb-2">
                       соток
                     </span>
