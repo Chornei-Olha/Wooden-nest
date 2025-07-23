@@ -19,20 +19,15 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16">
             {/* Левая часть */}
             <div className="flex flex-col gap-6 sm:gap-8 w-full lg:w-1/3">
-              <div className="flex items- gap-4">
-                <div
-                  className="w-12 sm:w-16 lg:w-[68px] h-12 sm:h-16 lg:h-[82px] bg-cover bg-center rounded-lg"
-                  style={{ backgroundImage: 'url(/images/img_vector_white_a700_82x69.svg)' }}
-                >
-                  <div className="w-full h-full flex items-center justify-center">
-                    <Image
-                      src="/images/img_vector_white_a700_12x10.svg"
-                      alt="Logo Icon"
-                      width={10}
-                      height={12}
-                      className="w-2 sm:w-3 h-2 sm:h-3"
-                    />
-                  </div>
+              <div className="flex items-center gap-4">
+                <div className="w-[50px] sm:w-[60px] lg:w-[70px]">
+                  <Image
+                    src="/images/img_link.svg"
+                    alt="Woodnest Logo"
+                    width={70}
+                    height={82}
+                    className="w-full h-auto"
+                  />
                 </div>
                 <div className="mb-4">
                   <h3 className="text-2xl sm:text-3xl lg:text-[36px] font-montserrat font-semibold text-global-12 leading-tight">
